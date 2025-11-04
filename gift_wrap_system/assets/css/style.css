@@ -1,0 +1,149 @@
+:root {
+  --primary-color: #ee4d2d; /* Bright Orange (Shopee Main Color) */
+  --secondary-color: #4b4b4b; /* Dark Gray (Text/Secondary Elements) */
+  --background-color: #f0f0f0; /* Light Gray background */
+  --card-background: #ffffff;
+  --text-color: #333;
+  --success-color: #4caf50; /* Standard Green */
+  --error-color: #dc3545;
+
+  /* Status Colors */
+  --pending-color: #ee4d2d;
+  --inprogress-color: #007bff;
+  --completed-color: #4caf50;
+  --claimed-color: #6f42c1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif; /* Clean, standard font */
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+.kiosk-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms and Inputs */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="datetime-local"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+}
+
+fieldset {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding: 0 10px;
+}
+
+/* Buttons (Shopee Style) */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #f36c53;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn {
+  background-color: #efefef;
+  color: var(--secondary-color);
+  border: 1px solid #ccc;
+}
+
+.secondary-btn:hover {
+  background-color: #e0e0e0;
+  color: var(--secondary-color);
+}
+
+.large-btn {
+  padding: 15px 30px;
+  font-size: 1.2em;
+}
+
+.small-btn {
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+
+/* Alerts */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border-left: 5px solid;
+  font-weight: 500;
+}
+
+.alert.success {
+  background-color: #e6f7e9;
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.alert.error {
+  background-color: #fcebeb;
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
